@@ -1,3 +1,10 @@
+/**
+ * Basketball Scoreboard
+ * Author: Melih
+ * Year: 2026
+ */
+
+
 let homeCount = 0
 let guestCount = 0 
 
