@@ -4,36 +4,42 @@ let guestCount = 0
 let homeCountEl = document.getElementById("home-score")
 let guestCountEl = document.getElementById("guest-score")
 
+function addPoints(teams, pointz) {
+    if (teams === "home") {
+        homeCount += pointz;
+        homeCountEl.textContent = homeCount;
+    }
+
+    if (teams === "guest") {
+        guestCount += pointz;
+        guestCountEl.textContent = guestCount;
+    }
+}
+
 function homeOnePoint() {
-  homeCount += 1;
-  homeCountEl.textContent = homeCount;
+  addPoints("home", 1);
 }
 
 function homeTwoPoint() {
-  homeCount += 2;
-  homeCountEl.textContent = homeCount;
+  addPoints("home", 2);
 }
 
 function homeThreePoint() {
-  homeCount += 3;
-  homeCountEl.textContent = homeCount;
+  addPoints("home", 3);
 }
 
 
 
 function guestOnePoint() {
-  guestCount += 1;
-  guestCountEl.textContent = guestCount;
+  addPoints("guest", 1);
 }
 
 function guestTwoPoint() {
-  guestCount += 2;
-  guestCountEl.textContent = guestCount;
+  addPoints("guest", 2);
 }
 
 function guestThreePoint() {
-  guestCount += 3;
-  guestCountEl.textContent = guestCount;
+  addPoints("guest", 3);
 }
 
 function reset() {
