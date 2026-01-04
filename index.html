@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        
+
+
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <div class="whole_counter_wrapper" id="home">
+                <h3 class="titles">HOME</h3>
+                    <div class="counter_wrapper"> 
+                        <h1 class="score_El" id="home-score"> 0 </h1>
+                    </div>
+                    
+                    <div class="score-buttons"> 
+                        <button class="score-btn" onclick="homeOnePoint()"> +1 </button>
+                        <button class="score-btn" onclick="homeTwoPoint()"> +2 </button>
+                        <button class="score-btn" onclick="homeThreePoint()"> +3 </button>
+                    </div>
+            </div>
+            
+            <div class="whole_counter_wrapper" id="guest">
+                <h3 class="titles">GUEST</h3>
+                    <div class="counter_wrapper"> 
+                        <h1 class="score_El" id="guest-score"> 0 </h1>
+                    </div>
+                    
+                    <div class="score-buttons"> 
+                        <button class="score-btn" onclick="guestOnePoint()" > +1 </button>
+                        <button class="score-btn" onclick="guestTwoPoint()"> +2 </button>
+                        <button class="score-btn" onclick="guestThreePoint()"> +3 </button>
+                    </div>
+            </div>
+        </div>
+        
+        <button id="resetBtn" onclick="reset()"> Reset </button>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
