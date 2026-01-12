@@ -3,20 +3,12 @@
   Author: Melih 
 */
 
-
-@font-face {
-  font-family: "Cursed Timer ULiL";
-  src: url("CursedTimerUlil-Aznm.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 body {
     margin: 0;
     background-color: rgb(27, 37, 74);
     color: white;
     text-align: center;
+    font-family: "Cursed Timer ULiL";
 }
 
 .titles {
